@@ -1,5 +1,5 @@
 #Proyecto:
-#  Que tanto la coalicion opositora necesita electoralmente a MC? Electoralmente que es MC?
+#  MC y la Coalicion Opositora
 # Autor: Jose Ahumada Castillo Tw @AhumadaReal
 #_______________________________________________________________________________
 #
@@ -635,56 +635,6 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
              width = 25,
              units = "cm")
 
-ggboxplot(NUEVA_ALIANZA_long_variaciones_2018_2012,                                     # boxplot de todos los partidos variacion 2018-2012
-                x = "variable",
-                y = "value",
-                title = "Variacion en voto a la presidencia por NUEVA ALIANZA 2018-2012",
-                ylab = "Diferencial",
-                xlab = "NUEVA ALIANZA",
-                color = "variable",
-                palette = c("deepskyblue4"),
-                add = c("jitter", "mean"),
-                rotate = TRUE,
-                caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/ , https://portalanterior.ine.mx/)",
-                ggtheme = theme_pubr()) +
-  geom_boxplot(outlier.colour = "red", outlier.shape = 4, outlier.size = 2)
-
-ggsave("outputs/Variacion en voto a la presidencia por NUEVA ALIANZA 2018-2012.png",
-             device = "png",
-             height = 20,
-             width = 25,
-             units = "cm")
-
-
-
-
-
-
-long_variaciones_2018_2012_chicos <- melt(variaciones_2018_2012_chicos, id.vars="id_estado")
-
-
-ggboxplot(long_variaciones_2018_2012_chicos,
-                  x = "variable",
-                  y = "value",
-                  title = "Variacion en voto a la presidencia por partido chico 2018-2012",
-                  ylab = "Diferencial",
-                  xlab = "Partidos Chicos",
-                  color = "variable",
-                  palette = c("green", "orange", "deepskyblue4"),
-                  add = c("jitter", "mean"),
-                  rotate = TRUE,
-                  caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/ , https://portalanterior.ine.mx/)",
-                  ggtheme = theme_pubr())
-
-ggplot(long_variaciones_2018_2012_chicos,                               # theme_light density plot
-               aes(x = value,
-                   fill = variable)) +
-geom_density(alpha = 0.5) +
-          scale_fill_manual( values = c("green", "orange", "deepskyblue4"))
-        theme_light()
-
-ggplot(long_variaciones_2018_2012_chicos, aes(x = value, fill = variable)) +                       # Draw overlaying histogram
-          geom_histogram(position = "identity", alpha = 0.2, bins = 50)
 
 
 
@@ -707,7 +657,7 @@ ggplot(long_variaciones_2018_2012_chicos, aes(x = value, fill = variable)) +    
         outliers_pvem
 
       boxplot.stats(variaciones_2018_2012$PT)
-        outliers_pt = (7 / 300) * 100
+        outliers_pt = (8 / 300) * 100
         outliers_pt
 
         boxplot.stats(variaciones_2018_2012$MC)
@@ -715,9 +665,6 @@ ggplot(long_variaciones_2018_2012_chicos, aes(x = value, fill = variable)) +    
         outliers_mc
 
 
-      oxplot.stats(variaciones_2018_2012$NUEVA_ALIANZA)
-        outliers_na = (13 / 300) * 100
-        outliers_na
 
         sd(variaciones_2018_2012$PRI, na.rm = 1)
         sd(variaciones_2018_2012$PAN, na.rm = 1)
@@ -725,7 +672,6 @@ ggplot(long_variaciones_2018_2012_chicos, aes(x = value, fill = variable)) +    
         sd(variaciones_2018_2012$VERDE, na.rm = 1)
         sd(variaciones_2018_2012$PT, na.rm = 1)
         sd(variaciones_2018_2012$MC, na.rm = 1)
-        sd(variaciones_2018_2012$NUEVA_ALIANZA, na.rm = 1)
 
 
         boxplot.stats(pedersen_2018_2012$PRI)
@@ -734,7 +680,6 @@ ggplot(long_variaciones_2018_2012_chicos, aes(x = value, fill = variable)) +    
         boxplot.stats(pedersen_2018_2012$VERDE)
         boxplot.stats(pedersen_2018_2012$PT)
         boxplot.stats(pedersen_2018_2012$MC)
-        boxplot.stats(pedersen_2018_2012$NUEVA_ALIANZA)
 #________________________________________________________________________________
 #________________________________________________________________________________
 ################################################################################
@@ -1001,24 +946,24 @@ saveRDS(mapa_presidencial_2012_distritos, ("outputs/presidencial_2018_distritos.
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pan_2012)) +
 geom_sf(color = "transparent") +
 scale_fill_gradientn(colors = c("white", "blue3"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) ) +
-labs(title = "Voto por el PAN 2012 (%)", x = "Latitud", y= "PAN", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+labs(title = "Voto por el PAN 2012 (%) - Nacional", x = "Latitud", y= "PAN", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
 guides(fill=guide_legend(title="Voto por el PAN (%)"))
 
 
-ggsave("outputs/presidencial_mapa_distritos_pan_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_pan.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
- mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pri_2012)) +
+mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pri_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red"), na.value = "white") + # 7 secciones na de origen convertidas a blanco)
-          labs(title = "Voto por el PRI 2012 (%)", x = "Latitud", y= "PRI", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PRI 2012 (%) - Nacional ", x = "Latitud", y= "PRI", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PRI (%)"))
 
 
-ggsave("outputs/presidencial_mapa_distritos_pri_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_pri.png",
                device = "png",
                height = 20,
                width = 25,
@@ -1027,10 +972,10 @@ ggsave("outputs/presidencial_mapa_distritos_pri_2012.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_prd_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "gold2"), na.value = "white" ) +# 7 secciones na de origen convertidas a blanco
-          labs(title = "Voto por el PRD 2012 (%)", x = "Latitud", y= "PRD", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PRD 2012 (%) - Nacional", x = "Latitud", y= "PRD", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PRD (%)"))
 
-ggsave("outputs/presidencial_mapa_distritos_prd_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_prd.png",
                device = "png",
                height = 20,
                width = 25,
@@ -1039,11 +984,11 @@ ggsave("outputs/presidencial_mapa_distritos_prd_2012.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pvem_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "green"), na.value = "white") + # 7 secciones na de origen convertidas a blanco
-          labs(title = "Voto por el PVEM 2012 (%)", x = "Latitud", y= "PVEM", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PVEM 2012 (%) - Nacional", x = "Latitud", y= "PVEM", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PVEM (%)"))
 
 
-ggsave("outputs/presidencial_mapa_distritos_pvem_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_pvem.png",
                device = "png",
                height = 20,
                width = 25,
@@ -1052,23 +997,11 @@ ggsave("outputs/presidencial_mapa_distritos_pvem_2012.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pt_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red3"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) +
-          labs(title = "Voto por el PT 2012 (%)", x = "Latitud", y= "PT", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
-          guides(fill=guide_legend(title="Voto por el PVEM (%)"))
+          labs(title = "Voto por el PT 2012 (%) - Nacional ", x = "Latitud", y= "PT", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          guides(fill=guide_legend(title="Voto por el PVEM (%) - Nacional "))
         guides(fill=guide_legend(title="Voto por el PT (%)"))
 
-ggsave("outputs/presidencial_mapa_distritos_pt_2012.png",
-               device = "png",
-               height = 20,
-               width = 25,
-               units = "cm")
-
-mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_nva_a_2012)) +
-          geom_sf(color = "transparent") +
-          scale_fill_gradientn(colors = c("white", "deepskyblue4"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) +
-          labs(title = "Voto por el NUEVA ALIANZA 2012 (%)", x = "Latitud", y= "NUEVA ALIANZA", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
-          guides(fill=guide_legend(title="Voto por NA (%)"))
-
-ggsave("outputs/presidencial_mapa_distritos_na_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_pt.png",
                device = "png",
                height = 20,
                width = 25,
@@ -1078,10 +1011,10 @@ ggsave("outputs/presidencial_mapa_distritos_na_2012.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_mc_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "orange"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) +) +
-          labs(title = "Voto por MC 2018 (%)", x = "Latitud", y= "MC", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por MC 2012 (%) - Nacional ", x = "Latitud", y= "MC", caption = "Elaborado por: José Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por MC (%)"))
 
-ggsave("outputs/presidencial_mapa_distritos_mc_2012.png",
+ggsave("outputs/2012_presidencial_mapa_distritos_mc.png",
                device = "png",
                height = 20,
                width = 25,
@@ -1105,13 +1038,13 @@ ggsave("outputs/presidencial_mapa_distritos_mc_2012.png",
         #mapas_secciones_2021$entidad <- as.numeric(mapas_secciones_2021$entidad)
 
 
-        presidencial_2018_distritos <- readRDS("outputs/presidencial_2018_distritos_federales.rds")
-        mapa_300distritos_federales <- st_read("inputs/DISTRITO_FEDERAL.shp")
+presidencial_2018_distritos <- readRDS("outputs/presidencial_2018_distritos_federales.rds")
+mapa_300distritos_federales <- st_read("inputs/DISTRITO_FEDERAL.shp")
         #plot(mapa_300distritos_federales)
 
 
-        presidencial_2018_distritos <- presidencial_2018_distritos %>%
-          clean_names()
+presidencial_2018_distritos <- presidencial_2018_distritos %>%
+clean_names()
 
         presidencial_2018_distritos <- presidencial_2018_distritos %>%
           group_by(id_estado, id_distrito) %>%
@@ -1172,103 +1105,91 @@ ggsave("outputs/presidencial_mapa_distritos_mc_2012.png",
         saveRDS(mapa_presidencial_2018_distritos, ("outputs/presidencial_2018_distritos.rds")) #save
 
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_morena_2018)) +
-          geom_sf(color = "transparent") +
-          scale_fill_gradientn(colors = c("white", "violetred4")) +
-          labs(title = "Voto por MORENA 2018 (%)", x = "Latitud", y= "MORENA", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
-          guides(fill=guide_legend(title="Voto por Morena (%)"))
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_morena_2018)) +
+geom_sf(color = "transparent") +
+scale_fill_gradientn(colors = c("white", "violetred4")) +
+labs(title = "Voto por MORENA 2018 (%) - Nacional", x = "Latitud", y= "MORENA", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+guides(fill=guide_legend(title="Voto por Morena (%)"))
 
 
 
-        ggsave("outputs/mapa_distritos_p_MORENA_20_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_morena.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pan_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pan_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "blue3")) +
-          labs(title = "Voto por el PAN 2018 (%)", x = "Latitud", y= "PAN", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+          labs(title = "Voto por el PAN 2018 (%) - Nacional", x = "Latitud", y= "PAN", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
           guides(fill=guide_legend(title="Voto por el PAN (%)"))
 
 
-        ggsave("outputs/mapa_secciones_p_PAN_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_pan.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pri_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pri_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red")) +
-          labs(title = "Voto por el PRI 2018 (%)", x = "Latitud", y= "PRI", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+          labs(title = "Voto por el PRI 2018 (%) - Nacional", x = "Latitud", y= "PRI", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
           guides(fill=guide_legend(title="Voto por el PRI (%)"))
 
 
-        ggsave("outputs/mapa_secciones_p_PRI_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_pri.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_prd_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_prd_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "gold2")) +
-          labs(title = "Voto por el PRD 2018 (%)", x = "Latitud", y= "PRD", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+          labs(title = "Voto por el PRD 2018 (%) - Nacional ", x = "Latitud", y= "PRD", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
           guides(fill=guide_legend(title="Voto por el PRD (%)"))
 
-        ggsave("outputs/mapa_secciones_p_PRD_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_prd.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pvem_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pvem_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "green")) +
-          labs(title = "Voto por el PVEM 2018 (%)", x = "Latitud", y= "PVEM", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+          labs(title = "Voto por el PVEM 2018 (%) - Nacional", x = "Latitud", y= "PVEM", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
           guides(fill=guide_legend(title="Voto por el PVEM (%)"))
 
 
-        ggsave("outputs/mapa_secciones_p_PVEM_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_pvem.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pt_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_pt_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red3")) +
-          labs(title = "Voto por el PT 2018 (%)", x = "Latitud", y= "PT", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
+          labs(title = "Voto por el PT 2018 (%) - Nacional", x = "Latitud", y= "PT", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
         guides(fill=guide_legend(title="Voto por el PT (%)"))
 
-        ggsave("outputs/mapa_secciones_p_PT_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_pt.png",
                device = "png",
                height = 20,
                width = 25,
                units = "cm")
 
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_nva_a_2018)) +
-          geom_sf(color = "transparent") +
-          scale_fill_gradientn(colors = c("white", "deepskyblue4")) +
-          labs(title = "Voto por el NUEVA ALIANZA 2018 (%)", x = "Latitud", y= "NUEVA ALIANZA", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/)") +
-         guides(fill=guide_legend(title="Voto por NA (%)"))
 
-          ggsave("outputs/mapa_secciones_p_NUEVA_ALIANZA_2021_diputados_MR.png",
-          device = "png",
-          height = 20,
-          width = 25,
-          units = "cm")
-
-
-        mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_mc_2018)) +
+mapa_presidencial_2018_distritos %>% ggplot(aes(fill = p_mc_2018)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "orange")) +
-          labs(title = "Voto por MC 2018 (%)", x = "Latitud", y= "MC", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/")
+          labs(title = "Voto por MC 2018 (%) - Nacional ", x = "Latitud", y= "MC", caption = "Elaborado por: Jose Ahumada Castillo @AhumadaReal \n Fuente: INE ( computos2018.ine.mx/")
           guides(fill=guide_legend(title="Voto por MC (%)"))
 
-        ggsave("outputs/mapa_secciones_p_MC_2021_diputados_MR.png",
+ggsave("outputs/2018_presidencial_mapa_distritos_mc.png",
                device = "png",
                height = 20,
                width = 25,
