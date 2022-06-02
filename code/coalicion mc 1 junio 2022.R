@@ -916,39 +916,40 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
         # Morena
         # Se quede
 
-        MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_morena_2018, y=p_siga))+
+MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>% 
+          ggplot(aes(x= p_morena_2018, y=p_siga))+
           geom_point(size = 1.5, color = "violetred4")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
-               y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \n Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          labs(x="Votos a Presidencia por Morena, 2018 (%)",
+               y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por Morena, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
+               subtitle="Por Distrito - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(MORENA_2018_SeQuede_2022_distritos)
 
         ggsave("outputs/MORENA_2018_SeQuede_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
         # Morena
         # Se vaya
         MORENA_2018_SeaRevocado_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_morena_2018, y=p_revoque))+
           geom_point(size = 1.5, color = "violetred4")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
-               y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \n Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          labs(x="Votos a Presidencia por Morena, 2018 (%)",
+               y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por Morena, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               subtitle="Por Distrito  - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(MORENA_2018_SeaRevocado_2022_distritos)
 
         ggsave("outputs/MORENA_2018_SeaRevocado_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
 
 
@@ -958,28 +959,28 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
         pan_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_pan_2018, y=p_siga))+
           geom_point(size = 1.5, color = "blue")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por el PAN, 2018 (%) - Nacional",
-               y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por el PAN, 2018 (%) - Nacional vs \n Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
+               y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por el PAN, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
+               subtitle="Por Distrito - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pan_2018_SeQuede_2022_distritos)
 
         ggsave("outputs/PAN_2018_SeQuede_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
         # pan
         # Se vaya
         pan_2018_SeaRevocado_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_pan_2018, y=p_revoque))+
           geom_point(size = 1.5, color = "blue")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por el PAN, 2018 (%) - Nacional",
-               y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por el PAN, 2018 (%) - Nacional vs \n Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
+               y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               subtitle="Por Distrito - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pan_2018_SeaRevocado_2022_distritos)
@@ -1149,37 +1150,37 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
 
         mc_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_mc_2018, y=p_siga))+
           geom_point(size = 1.5, color = "orange")+
-          geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por MC, 2018 (%) - Nacional",
-               y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por MC, 2018 (%) - Nacional vs \n Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          #geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
+          labs(x="Votos a Presidencia por MC, 2018 (%) ",
+               y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por MC, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
+               subtitle="Por Distrito - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(mc_2018_SeQuede_2022_distritos)
 
         ggsave("outputs/mc_2018_SeQuede_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
         # mc
         # Se vaya
         mc_2018_SeaRevocado_2022_distritos <- presidencia_2018_revocacion_distrito %>% ggplot(aes(x= p_mc_2018, y=p_revoque))+
           geom_point(size = 1.5, color = "orange")+
-          geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por el MC, 2018 (%) - Nacional",
-               y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por el MC, 2018 (%) - Nacional vs \n Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          #geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
+          labs(x="Votos a Presidencia por  MC, 2018 (%) ",
+               y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               title="Votos a Presidencia por  MC, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
+               subtitle="Por Distrito - Nacional", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(mc_2018_SeaRevocado_2022_distritos)
 
         ggsave("outputs/mc_2018_SeaRevocado_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
         ################################################################################################################################
         ################################################################################
@@ -1191,6 +1192,7 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
         jalisco_presidencia_2018_revocacion_distritos <- presidencia_2018_revocacion_distrito%>%
           clean_names() %>%
           filter(id_estado != 0) %>%
+          
           filter(id_estado == 14)
         # Morena
         # Se quede
@@ -1198,27 +1200,27 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
         jalisco_MORENA_2018_SeQuede_2022_distritos <- jalisco_presidencia_2018_revocacion_distritos %>% ggplot(aes(x= p_morena_2018, y=p_siga))+
           geom_point(size = 1.5, color = "violetred4")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
-               y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \n Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+          labs(x="Votos a Presidencia por Morena, 2018 (%)",
+               y="Votos para que AMLO Siga en la presidencia, 2022 (%)",
+               title="Votos a Presidencia por Morena, 2018 (%) vs \nVotos para que AMLO Siga en la presidencia, 2022 (%)",
+               subtitle="Por Distrito - Jalisco", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_MORENA_2018_SeQuede_2022_distritos)
 
         ggsave("outputs/jalisco_MORENA_2018_SeQuede_2022_distritos.png",
                device = "png",
-               height = 20,
-               width = 25,
+               height = 15,
+               width = 20,
                units = "cm")
         # Morena
         # Se vaya
         jalisco_MORENA_2018_SeaRevocado_2022_distritos <- jalisco_presidencia_2018_revocacion_distritos %>% ggplot(aes(x= p_morena_2018, y=p_revoque))+
           geom_point(size = 1.5, color = "violetred4")+
           geom_smooth(method = lm, se = FALSE, color= "black", linetype = "dashed") +
-          labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
-               y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \n Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
+          labs(x="Votos a Presidencia por Morena, 2018 (%)",
+               y="Votos para que AMLO sea Revocado de la presidencia, 2022 (%)",
+               title="Votos a Presidencia por Morena, 2018 (%) - vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                subtitle="Por Distrito", caption = "José Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
