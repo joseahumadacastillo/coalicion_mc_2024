@@ -66,7 +66,7 @@ library(sf)
 #_______________________________________________________________________________
 #getwd()
 
-setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")
+# setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")   # ruta local; ajustar al directorio del proyecto
 #_______________________________________________________________________________
 #_______________________________________________________________________________
 
@@ -95,10 +95,10 @@ T_2000
 barplot_2000 <- ggplot(barplot_2000, aes(Partido, dosmil, fill = Partido)) +
   geom_bar(stat="identity", width= .5) +
   scale_fill_manual(values=c("blue", "red", "gold2", "purple", "orange", "magenta3")) +
-  labs(x=" Partidos/Cabeza de CoaliciÛn para Presidencia 2000 (%)",
+  labs(x=" Partidos/Cabeza de Coalici√≥n para Presidencia 2000 (%)",
        y="Votos para Presidencial 2000 (%)",
        title="Votos para Presidencia 2000 (%)",
-       subtitle="Nacional\nDiferencia entre primero y segundo = 6.41\nDiferencia entre segundo y tercero = 19.47  ", caption = "JosÈ Ahumada Castillo   tw: @AhumadaReal\n Por simplificaciÛn se pone el partido m·s grande de la coaliciÛn \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
+       subtitle="Nacional\nDiferencia entre primero y segundo = 6.41\nDiferencia entre segundo y tercero = 19.47  ", caption = "Jos√© Ahumada Castillo   tw: @AhumadaReal\n Por simplificaci√≥n se pone el partido m√°s grande de la coalici√≥n \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
   geom_text(aes(label = dosmil), position = position_dodge(.9), size=5, vjust = 1.5, size = 2, color = "black")
 
 barplot_2000
@@ -137,10 +137,10 @@ segundo_2006 - tercero_2006
 barplot_2006 <- ggplot(barplot_2006, aes(Partido, dosmilseis, fill = Partido)) +
   geom_bar(stat="identity", width= .5) +
   scale_fill_manual(values=c("blue", "gold2", "red", "deepskyblue4", "navyblue")) +
-  labs(x=" Partidos/Cabeza de CoaliciÛn para Presidencia 2006 (%)",
+  labs(x=" Partidos/Cabeza de Coalici√≥n para Presidencia 2006 (%)",
        y="Votos para Presidencial 2006 (%)",
        title="Votos para Presidencia 2006 (%)",
-       subtitle="Nacional\nDiferencia entre primero y segundo = .58\nDiferencia entre segundo y tercero = 13.05  ", caption = "JosÈ Ahumada Castillo   tw: @AhumadaReal\n Por simplificaciÛn se pone el partido m·s grande de la coaliciÛn \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
+       subtitle="Nacional\nDiferencia entre primero y segundo = .58\nDiferencia entre segundo y tercero = 13.05  ", caption = "Jos√© Ahumada Castillo   tw: @AhumadaReal\n Por simplificaci√≥n se pone el partido m√°s grande de la coalici√≥n \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
   geom_text(aes(label = dosmilseis), position = position_dodge(.9), size=5, vjust = 1.5, size = 2, color = "black")
 
 barplot_2006
@@ -178,10 +178,10 @@ segundo_2012 - tercero_2012
 barplot_2012 <- ggplot(barplot_2012, aes(Partido, dosmildoce, fill = Partido)) +
   geom_bar(stat="identity", width= .5) +
   scale_fill_manual(values=c("red", "gold2", "blue", "deepskyblue4")) +
-  labs(x=" Partidos/Cabeza de CoaliciÛn para Presidencia 2012 (%)",
+  labs(x=" Partidos/Cabeza de Coalici√≥n para Presidencia 2012 (%)",
        y="Votos para Presidencial 2012 (%)",
        title="Votos para Presidencia 2012 (%)",
-       subtitle="Nacional\nDiferencia entre primero y segundo = 5.6\nDiferencia entre segundo y tercero = 7.21  ", caption = "JosÈ Ahumada Castillo   tw: @AhumadaReal\n Por simplificaciÛn se pone el partido m·s grande de la coaliciÛn \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
+       subtitle="Nacional\nDiferencia entre primero y segundo = 5.6\nDiferencia entre segundo y tercero = 7.21  ", caption = "Jos√© Ahumada Castillo   tw: @AhumadaReal\n Por simplificaci√≥n se pone el partido m√°s grande de la coalici√≥n \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
   geom_text(aes(label = dosmildoce), position = position_dodge(.9), size=5, vjust = 1.5, size = 2, color = "black")
 
 barplot_2012
@@ -218,10 +218,10 @@ segundo_2018 - tercero_2018
 barplot_2018 <- ggplot(barplot_2018, aes(Partido, dosmildieciocho, fill = Partido)) +
   geom_bar(stat="identity", width= .5) +
   scale_fill_manual(values=c("violetred4", "blue", "red", "purple")) +
-  labs(x=" Partidos/Cabeza de CoaliciÛn para Presidencia 2018 (%)",
+  labs(x=" Partidos/Cabeza de Coalici√≥n para Presidencia 2018 (%)",
        y="Votos para Presidencial 2018 (%)",
        title="Votos para Presidencia 2018 (%)",
-       subtitle="Nacional\nDiferencia entre primero y segundo = 30.92\nDiferencia entre segundo y tercero = 5.87  ", caption = "JosÈ Ahumada Castillo   tw: @AhumadaReal\n Por simplificaciÛn se pone el partido m·s grande de la coaliciÛn \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
+       subtitle="Nacional\nDiferencia entre primero y segundo = 30.92\nDiferencia entre segundo y tercero = 5.87  ", caption = "Jos√© Ahumada Castillo   tw: @AhumadaReal\n Por simplificaci√≥n se pone el partido m√°s grande de la coalici√≥n \n Los votos nulos y por candidaturas no registradas complementan la suma a 100%") +
   geom_text(aes(label = dosmildieciocho), position = position_dodge(.9), size=5, vjust = 1.5, size = 2, color = "black")
 
 barplot_2018
@@ -234,7 +234,7 @@ ggsave("outputs/barplot_2018.png",
 
 ################################################################################
 ################################################################################
-#################################### SECCI”N I:#################################
+#################################### SECCI√ìN I:#################################
 ################################ diagramas de #######################
 ################################## Caja y brazos##############################
 ################################################################################
@@ -330,7 +330,7 @@ presidencial_2018 <- presidencial_2018 %>%                                      
 
 saveRDS(presidencial_2018, ("outputs/presidencial_2018_distritos_federales.rds"))       #save
 #________________________________________________________________________________
-#UniÛnde bases 1 y 2
+#Uni√≥nde bases 1 y 2
 
 
 volatilidad_presidencial_2012_2018 <- left_join(presidencial_2012, presidencial_2018, by = c("id_estado", "id_distrito"))
@@ -444,7 +444,7 @@ variaciones_2018_2012 <- variaciones_2018_2012%>%
 
 
 #_______________________________________________________________________________
-# Coeficiente de pedersen para cada partido polÌtico.
+# Coeficiente de pedersen para cada partido pol√≠tico.
   #pedersen_partido = (abs(20118-2012))
 
   pedersen_2018_2012 <- volatilidad_presidencial_2012_2018
@@ -485,7 +485,7 @@ variaciones_2018_2012 <- variaciones_2018_2012%>%
 #________________________________________________________________________________
 
 #_______________________________________________________________________________
-# Gr·ficas
+# Gr√°ficas
 #_______________________________________________________________________________
 
 # Diagrama de caja y brazos
@@ -684,7 +684,7 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
 #________________________________________________________________________________
 ################################################################################
 ################################################################################
-############################### SECCI”N II #####################################
+############################### SECCI√ìN II #####################################
 #############################  SCATTERPLOTS ####################################
 ################################################################################
 ################################################################################
@@ -697,10 +697,10 @@ ggsave("outputs/Variacion en voto a la presidencia por MC 2018-2012.png",
         ############# Distritos diputaciones 2021 revocacion 2022 ######################
 
 
-        setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")
+        # setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")   # ruta local; ajustar al directorio del proyecto
 
 
-        setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")
+        # setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")   # ruta local; ajustar al directorio del proyecto
 
 
         presidencial_2018 <- read.csv("inputs/2018_presidencia.csv")
@@ -851,7 +851,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(MORENA_2018_SeQuede_2022_distritos)
@@ -869,7 +869,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito  - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito  - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(MORENA_2018_SeaRevocado_2022_distritos)
@@ -890,7 +890,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pan_2018_SeQuede_2022_distritos)
@@ -908,7 +908,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pan_2018_SeaRevocado_2022_distritos)
@@ -928,7 +928,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRI, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pri_2018_SeQuede_2022_distritos)
@@ -946,7 +946,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRI, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pri_2018_SeaRevocado_2022_distritos)
@@ -968,7 +968,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRD, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(prd_2018_SeQuede_2022_distritos)
@@ -986,7 +986,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRD, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(prd_2018_SeaRevocado_2022_distritos)
@@ -1006,7 +1006,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pvem_2018_SeQuede_2022_distritos)
@@ -1024,7 +1024,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pvem_2018_SeaRevocado_2022_distritos)
@@ -1044,7 +1044,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PT, 2018 (%) - Nacional vs \n Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pt_2018_SeQuede_2022_distritos)
@@ -1062,7 +1062,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PT, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pt_2018_SeaRevocado_2022_distritos)
@@ -1082,7 +1082,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(mc_2018_SeQuede_2022_distritos)
@@ -1100,7 +1100,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por  MC, 2018 (%) ",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por  MC, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nacional", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nacional", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(mc_2018_SeaRevocado_2022_distritos)
@@ -1131,7 +1131,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_MORENA_2018_SeQuede_2022_distritos)
@@ -1149,7 +1149,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%) - vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_MORENA_2018_SeaRevocado_2022_distritos)
@@ -1170,7 +1170,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PAN, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pan_2018_SeQuede_2022_distritos)
@@ -1188,7 +1188,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pan_2018_SeaRevocado_2022_distritos)
@@ -1208,7 +1208,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRI, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pri_2018_SeQuede_2022_distritos)
@@ -1226,7 +1226,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRI, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pri_2018_SeaRevocado_2022_distritos)
@@ -1248,7 +1248,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRD, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_prd_2018_SeQuede_2022_distritos)
@@ -1266,7 +1266,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PRD, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
 
@@ -1287,7 +1287,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pvem_2018_SeQuede_2022_distritos)
@@ -1305,7 +1305,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pvem_2018_SeaRevocado_2022_distritos)
@@ -1325,7 +1325,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PT, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pt_2018_SeQuede_2022_distritos)
@@ -1343,7 +1343,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%) - Nacional",
                y="Votos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por el PT, 2018 (%) - Nacional vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_pt_2018_SeaRevocado_2022_distritos)
@@ -1363,7 +1363,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%)",
                y="Votos para que AMLO Siga en la presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la presidencia, 2022 (%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_mc_2018_SeQuede_2022_distritos)
@@ -1381,7 +1381,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el MC, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el MC, 2018 (%) vs \nVotos para que AMLO sea Revocado de la presidencia, 2022(%)",
-               subtitle="Por Distrito - Jalisco", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Jalisco", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(jalisco_mc_2018_SeaRevocado_2022_distritos)
@@ -1409,7 +1409,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_MORENA_2018_SeQuede_2022_distritos)
@@ -1427,7 +1427,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_MORENA_2018_SeaRevocado_2022_distritos)
@@ -1448,7 +1448,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pan_2018_SeQuede_2022_distritos)
@@ -1466,7 +1466,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022(%)",
                title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pan_2018_SeaRevocado_2022_distritos)
@@ -1486,7 +1486,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%)vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pri_2018_SeQuede_2022_distritos)
@@ -1504,7 +1504,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pri_2018_SeaRevocado_2022_distritos)
@@ -1526,7 +1526,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \n Votos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_prd_2018_SeQuede_2022_distritos)
@@ -1544,7 +1544,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \Votos para que AMLO sea Revocado de la Presidencia, 2022(%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
 
@@ -1565,7 +1565,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022(%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pvem_2018_SeQuede_2022_distritos)
@@ -1583,7 +1583,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pvem_2018_SeaRevocado_2022_distritos)
@@ -1603,7 +1603,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_pt_2018_SeQuede_2022_distritos)
@@ -1621,7 +1621,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(pt_pt_2018_SeaRevocado_2022_distritos)
@@ -1641,7 +1641,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_mc_2018_SeQuede_2022_distritos)
@@ -1659,7 +1659,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el MC, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el MC, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Nuevo LeÛn", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Nuevo Le√≥n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
 
         print(nl_mc_2018_SeaRevocado_2022_distritos)
@@ -1689,7 +1689,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_MORENA_2018_SeQuede_2022_distritos)
@@ -1707,7 +1707,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_MORENA_2018_SeaRevocado_2022_distritos)
@@ -1728,7 +1728,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pan_2018_SeQuede_2022_distritos)
@@ -1746,7 +1746,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022(%)",
                title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pan_2018_SeaRevocado_2022_distritos)
@@ -1766,7 +1766,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%)vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pri_2018_SeQuede_2022_distritos)
@@ -1784,7 +1784,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pri_2018_SeaRevocado_2022_distritos)
@@ -1806,7 +1806,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_prd_2018_SeQuede_2022_distritos)
@@ -1824,7 +1824,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         
@@ -1845,7 +1845,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pvem_2018_SeQuede_2022_distritos)
@@ -1863,7 +1863,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pvem_2018_SeaRevocado_2022_distritos)
@@ -1883,7 +1883,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pt_2018_SeQuede_2022_distritos)
@@ -1901,7 +1901,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pt_2018_SeaRevocado_2022_distritos)
@@ -1921,7 +1921,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_mc_2018_SeQuede_2022_distritos)
@@ -1939,7 +1939,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el MC, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el MC, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_mc_2018_SeaRevocado_2022_distritos)
@@ -1970,7 +1970,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_MORENA_2018_SeQuede_2022_distritos)
@@ -1988,7 +1988,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_MORENA_2018_SeaRevocado_2022_distritos)
@@ -2009,7 +2009,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pan_2018_SeQuede_2022_distritos)
@@ -2027,7 +2027,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022(%)",
                title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pan_2018_SeaRevocado_2022_distritos)
@@ -2047,7 +2047,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%)vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pri_2018_SeQuede_2022_distritos)
@@ -2065,7 +2065,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pri_2018_SeaRevocado_2022_distritos)
@@ -2087,7 +2087,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_prd_2018_SeQuede_2022_distritos)
@@ -2105,7 +2105,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         
@@ -2126,7 +2126,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022(%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pvem_2018_SeQuede_2022_distritos)
@@ -2144,7 +2144,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pvem_2018_SeaRevocado_2022_distritos)
@@ -2164,7 +2164,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pt_2018_SeQuede_2022_distritos)
@@ -2182,7 +2182,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_pt_2018_SeaRevocado_2022_distritos)
@@ -2202,7 +2202,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_mc_2018_SeQuede_2022_distritos)
@@ -2220,7 +2220,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el MC, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el MC, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - CDMX", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - CDMX", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(c_mc_2018_SeaRevocado_2022_distritos)
@@ -2252,7 +2252,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%) - Nacional",
                y="Votos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
                title="Votos a Presidencia por Morena, 2018 (%) - Nacional vs \nVotos para que AMLO Siga en la Presidencia, 2022 Nacional(%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_MORENA_2018_SeQuede_2022_distritos)
@@ -2270,7 +2270,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por Morena, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por Morena, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_MORENA_2018_SeaRevocado_2022_distritos)
@@ -2291,7 +2291,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%) ",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PAN, 2018 (%) -  vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pan_2018_SeQuede_2022_distritos)
@@ -2309,7 +2309,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PAN, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022(%)",
                title="Votos a Presidencia por el PAN, 2018 (%)  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pan_2018_SeaRevocado_2022_distritos)
@@ -2329,7 +2329,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%)vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pri_2018_SeQuede_2022_distritos)
@@ -2347,7 +2347,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRI, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRI, 2018 (%) -  vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pri_2018_SeaRevocado_2022_distritos)
@@ -2369,7 +2369,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_prd_2018_SeQuede_2022_distritos)
@@ -2387,7 +2387,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PRD, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PRD, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022(%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         
@@ -2408,7 +2408,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022(%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pvem_2018_SeQuede_2022_distritos)
@@ -2426,7 +2426,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PVEM, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PVEM, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pvem_2018_SeaRevocado_2022_distritos)
@@ -2446,7 +2446,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pt_2018_SeQuede_2022_distritos)
@@ -2464,7 +2464,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el PT, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el PT, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_pt_2018_SeaRevocado_2022_distritos)
@@ -2484,7 +2484,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por MC, 2018 (%)",
                y="Votos para que AMLO Siga en la Presidencia, 2022 (%)",
                title="Votos a Presidencia por MC, 2018 (%) vs \nVotos para que AMLO Siga en la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_mc_2018_SeQuede_2022_distritos)
@@ -2502,7 +2502,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
           labs(x="Votos a Presidencia por el MC, 2018 (%)",
                y="Votos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
                title="Votos a Presidencia por el MC, 2018 (%) vs \nVotos para que AMLO sea Revocado de la Presidencia, 2022 (%)",
-               subtitle="Por Distrito - Yucat·n", caption = "JosÈ Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
+               subtitle="Por Distrito - Yucat√°n", caption = "Jos√© Ahumada Castillo @AhumadaReal \n  Fuente: (https://computos2018.ine.mx, https://computosrm2022.ine.mx/)") +
           theme_economist()
         
         print(y_mc_2018_SeaRevocado_2022_distritos)
@@ -2525,7 +2525,7 @@ MORENA_2018_SeQuede_2022_distritos <- presidencia_2018_revocacion_distrito %>%
 #-------------------------------------------------------------------------------
 
 
-setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")
+# setwd("C:/Users/Jose Ahumada/Desktop/github/coalicion_mc_2024")   # ruta local; ajustar al directorio del proyecto
 
 
 presidencial_2012_distritos <- readRDS("outputs/presidencial_2012_distritos_federales.rds")
@@ -2568,7 +2568,7 @@ saveRDS(mapa_presidencial_2012_distritos, ("outputs/presidencial_2018_distritos.
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pan_2012)) +
 geom_sf(color = "transparent") +
 scale_fill_gradientn(colors = c("white", "blue3"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) ) +
-labs(title = "Voto por el PAN 2012 (%) - Nacional", x = "Latitud", y= "PAN", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+labs(title = "Voto por el PAN 2012 (%) - Nacional", x = "Latitud", y= "PAN", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
 guides(fill=guide_legend(title="Voto por el PAN (%)"))
 
 
@@ -2581,7 +2581,7 @@ ggsave("outputs/2012_presidencial_mapa_distritos_pan.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pri_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red"), na.value = "white") + # 7 secciones na de origen convertidas a blanco)
-          labs(title = "Voto por el PRI 2012 (%) - Nacional ", x = "Latitud", y= "PRI", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PRI 2012 (%) - Nacional ", x = "Latitud", y= "PRI", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PRI (%)"))
 
 
@@ -2594,7 +2594,7 @@ ggsave("outputs/2012_presidencial_mapa_distritos_pri.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_prd_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "gold2"), na.value = "white" ) +# 7 secciones na de origen convertidas a blanco
-          labs(title = "Voto por el PRD 2012 (%) - Nacional", x = "Latitud", y= "PRD", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PRD 2012 (%) - Nacional", x = "Latitud", y= "PRD", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PRD (%)"))
 
 ggsave("outputs/2012_presidencial_mapa_distritos_prd.png",
@@ -2606,7 +2606,7 @@ ggsave("outputs/2012_presidencial_mapa_distritos_prd.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pvem_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "green"), na.value = "white") + # 7 secciones na de origen convertidas a blanco
-          labs(title = "Voto por el PVEM 2012 (%) - Nacional", x = "Latitud", y= "PVEM", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PVEM 2012 (%) - Nacional", x = "Latitud", y= "PVEM", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PVEM (%)"))
 
 
@@ -2619,7 +2619,7 @@ ggsave("outputs/2012_presidencial_mapa_distritos_pvem.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_pt_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "red3"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) +
-          labs(title = "Voto por el PT 2012 (%) - Nacional ", x = "Latitud", y= "PT", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por el PT 2012 (%) - Nacional ", x = "Latitud", y= "PT", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por el PVEM (%) - Nacional "))
         guides(fill=guide_legend(title="Voto por el PT (%)"))
 
@@ -2633,7 +2633,7 @@ ggsave("outputs/2012_presidencial_mapa_distritos_pt.png",
 mapa_presidencial_2012_distritos %>% ggplot(aes(fill = p_mc_2012)) +
           geom_sf(color = "transparent") +
           scale_fill_gradientn(colors = c("white", "orange"), na.value = "white") + # 7 secciones na de origen convertidas a blanco) +) +
-          labs(title = "Voto por MC 2012 (%) - Nacional ", x = "Latitud", y= "MC", caption = "Elaborado por: JosÈ Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
+          labs(title = "Voto por MC 2012 (%) - Nacional ", x = "Latitud", y= "MC", caption = "Elaborado por: Jos√© Ahumada Castillo @AhumadaReal \n Fuente: INE ( https://prep2012.ife.org.mx/prep/)") +
           guides(fill=guide_legend(title="Voto por MC (%)"))
 
 ggsave("outputs/2012_presidencial_mapa_distritos_mc.png",
